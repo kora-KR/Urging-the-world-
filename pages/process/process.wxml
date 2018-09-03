@@ -1,0 +1,13 @@
+<image class="header_img" src="{{headerImg}}"></image>
+
+<view class="main">
+  <view class="process_item" wx:for="{{processItem}}" wx:key="{{item}}">
+    <view>
+      <view>
+        <image src="{{item.img}}"></image> 
+      </view>
+      <text>{{item.txt}}</text>
+    </view>
+    <image class="bg_int" src="{{index==4?'':bgInt}}"></image> 
+  </view>
+</view>

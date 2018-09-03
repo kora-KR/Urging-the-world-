@@ -1,0 +1,58 @@
+<view class="header">
+  <image class="ehaderImg" src="{{static_img.ehader_img}}"></image>
+  <navigator url="/pages/arrearsHome/arrearsHome?add=0"></navigator>
+  <navigator url="/pages/arrearsHome/arrearsHome?add=1"></navigator>
+</view>
+
+<view class="center" style='{{centerStyle}}' bindtap='handleClickOverSub'>
+  <button type="primary" style="background: #5084ef" class="centerTip">查看已提交的申请</button>
+</view>
+
+<!-- 最新委托 -->
+<view class="auz">
+  <text class="int"></text>
+  <view class="auz_tip">最新委托</view>
+  <swiper class="swiper" circular="true" vertical="true"
+    autoplay="{{autoplay}}" intervalL="{{intervalL}}" duration="{{duration}}" display-multiple-items="2">
+    <block wx:for="{{auz}}" wx:key="{{item}}">
+      <swiper-item>
+        <view class="auzItem">
+          <view>
+            <view class="coin">{{item.qkje}}万</view>
+            <view>{{item.cqkbh}}</view>
+          </view>
+          <view>
+            <view class="name">{{item.zsOrgName}}</view>
+            <view>{{item.zqrlxdh}}</view>
+          </view>
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 最新回款 -->
+<view class="rec">
+  <image src="{{static_img.pic_dun_newdun_url}}"></image>
+  <swiper class="swiperRec" circular="true" vertical="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" display-multiple-items="2">
+    <block wx:for="{{rec}}" wx:key="{{item}}">
+      <swiper-item class="recItem">
+        <text>{{item.zqrlxdh}}</text>
+        <text class="recName">{{item.zsOrgName}}</text>
+        <text class="recCoin">{{item.qkje}}万</text>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 了解更多 -->
+<view class="more auz">
+  <text class="int int2"></text>
+  <view class="auz_tip">了解更多</view>
+  <view class="moreTip">
+    <navigator url="/pages/arrearsWeb/arrearsWeb?url={{item.url}}&text={{item.text}}" wx:for="{{more}}" wx:key="{{item}}">
+      <image src='{{item.src}}'></image>
+      <view>{{item.text}}</view>
+    </navigator>
+  </view>
+</view>

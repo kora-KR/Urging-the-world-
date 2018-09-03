@@ -1,0 +1,224 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.94",
+	"appid": "wx944593e88543a16b",
+	"projectname": "X315-%E5%82%AC%E6%AC%A0%E6%AC%BE",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 30,
+			"list": [
+				{
+					"id": 0,
+					"name": "search",
+					"pathName": "pages/search/search",
+					"query": "VT=test"
+				},
+				{
+					"id": 1,
+					"name": "searchDetail",
+					"pathName": "pages/searchDetail/searchDetail",
+					"query": "VT=test"
+				},
+				{
+					"id": 2,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "brief",
+					"pathName": "pages/brief/brief",
+					"query": "VT=test&id=ZHNQNFVLTHFraUVKR0xKQlhOMWxzZz09"
+				},
+				{
+					"id": -1,
+					"name": "grade",
+					"pathName": "pages/grade/grade",
+					"query": "VT=test&id=ZHNQNFVLTHFraUVKR0xKQlhOMWxzZz09"
+				},
+				{
+					"id": -1,
+					"name": "require",
+					"pathName": "pages/require/require",
+					"query": "VT=test&id=ZHNQNFVLTHFraUVKR0xKQlhOMWxzZz09"
+				},
+				{
+					"id": -1,
+					"name": "creditLine",
+					"pathName": "pages/creditLine/creditLine",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "strategy",
+					"pathName": "pages/strategy/strategy",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "baseNews",
+					"pathName": "pages/baseNews/baseNews",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "arrears",
+					"pathName": "pages/arrears/arrears",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "arrearsHmoe",
+					"pathName": "pages/arrearsHome/arrearsHome",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "creditRating",
+					"pathName": "pages/creditRating/creditRating",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "financing",
+					"pathName": "pages/financing/financing",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "financingSubmit",
+					"pathName": "pages/finacingSubmit/finacingSubmit",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "dataCustomization",
+					"pathName": "pages/dataCustomization/dataCustomization",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "overseas",
+					"pathName": "pages/overseas/overseas",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "experian",
+					"pathName": "pages/experian/experian",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "more",
+					"pathName": "pages/more/more",
+					"query": "VT=test"
+				},
+				{
+					"id": 18,
+					"name": "index_debug",
+					"pathName": "pages/index/index",
+					"query": "VT=debug"
+				},
+				{
+					"id": 19,
+					"name": "index_dev",
+					"pathName": "pages/index/index",
+					"query": "VT=dev"
+				},
+				{
+					"id": 20,
+					"name": "index",
+					"pathName": "pages/index/index",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "a",
+					"pathName": "pages/a/a",
+					"query": "VT=debug"
+				},
+				{
+					"id": 22,
+					"name": "催收需求",
+					"pathName": "pages/arrearsSubmit/arrearsSubmit",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "已提交需求详细",
+					"pathName": "pages/arrearsSubmitDetail/arrearsSubmitDetail",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "已提交融资",
+					"pathName": "pages/finacingSubmitDetail/finacingSubmitDetail",
+					"query": "VT=test"
+				},
+				{
+					"id": -1,
+					"name": "引导页",
+					"pathName": "pages/bootPage/bootPage",
+					"query": "VT=test&id=ZHNQNFVLTHFraUVKR0xKQlhOMWxzZz09"
+				},
+				{
+					"id": 26,
+					"name": "关于我们",
+					"pathName": "pages/aboutUs/aboutUs",
+					"query": "VT=test"
+				},
+				{
+					"id": 27,
+					"name": "头条资讯",
+					"pathName": "pages/headline/headline",
+					"query": "VT=test"
+				},
+				{
+					"id": 28,
+					"name": "头条资讯-详细",
+					"pathName": "pages/headlineItem/headlineItem",
+					"query": "VT=test"
+				},
+				{
+					"id": 29,
+					"name": "index_prod",
+					"pathName": "pages/index/index",
+					"query": "VT=prod"
+				},
+				{
+					"id": -1,
+					"name": "map",
+					"pathName": "pages/map/map",
+					"query": "VT=test"
+				}
+			]
+		}
+	}
+}

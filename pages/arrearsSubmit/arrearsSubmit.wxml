@@ -1,0 +1,38 @@
+<!-- <view class="my">
+  <view>
+    <image src="{{userImg}}"></image>
+  </view>
+  <view>
+    <view class="user_name">{{userName}}</view>
+    <view>{{longitude}}</view>
+  </view>
+</view> -->
+  <!-- 集团显示  -->
+<view class="main" hidden='{{mainShow}}'>
+  <navigator url="/pages/arrearsSubmitDetail/arrearsSubmitDetail?id={{item.id}}&tip={{tipi}}" class="item" wx:for="{{outList}}" wx:key="{{item}}" data-id="{{item.id}}">
+    <view style='color: {{item.c}};border: 1rpx solid {{item.c}}'  data-id="{{item.id}}">{{item.appZtRemark}}</view>
+    <view class="item_right"  data-id="{{item.id}}">
+      <view class="compony_name"  data-id="{{item.id}}">{{item.orgmc}}</view>
+      <view class="allTip"  data-id="{{item.id}}">
+        <text class="coin"  data-id="{{item.id}}">
+          <text class="city">{{item.gj?item.gj:"--"}}</text>
+          <text>{{item.qkje}}万</text>
+        </text>
+        <text class="time"  data-id="{{item.id}}">{{item.tjsj}}</text>
+      </view>
+    </view>
+  </navigator>
+</view> 
+
+<!-- 无提交默认显示 -->
+<view class="my_tip" hidden="{{showTip}}">
+  <image src="{{myTipImg}}"></image> 
+  <view>您尚未提交催收需求</view>
+</view>
+
+<view class="load_tip" hidden="{{btnShow}}">
+  <image src="{{loadImg}}"></image>
+  <view>催全球</view>
+  <view>申请获取您的公开信息（昵称、头像等）</view>
+  <button class="btn" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="background: #5458ec;width:710rpx">微信授权</button>
+</view>

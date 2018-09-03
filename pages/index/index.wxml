@@ -1,0 +1,51 @@
+<import src="./boot/boot.wxml"/>
+
+<!-- 顶部图片 -->
+<image class='header_img' src='{{pageHeadImg}}'></image>
+
+<!-- main -->
+<view class="main">
+  <!-- 优势推荐 -->
+  <view class="bg_fff adv">
+    <view class="adv_item" wx:for="{{adv}}" wx:key="{{item}}">
+      <view>
+        <image src='{{item.img}}'></image> 
+      </view>
+      <view class="adv_txt">
+        <view>{{item.h1}}</view>
+        <view class="adv_h2">{{item.h2}}</view>
+      </view>
+    </view>
+  </view>
+  <!-- 资讯头条 -->
+  <view class="rec bg_fff" bindtap='handleClickHeadLine'>
+    <image src="{{headLineImg}}"></image>
+    <image class="head_line_icon" src="{{headLineIcon}}"></image>
+    <swiper class="swiperRec" circular="true" vertical="true" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" display-multiple-items="2">
+      <block wx:for="{{headline}}" wx:key="{{item}}">
+        <swiper-item class="recSwiper">
+          <text class="recName">{{item.title}}</text>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <!-- 联系客服 -->
+  <view class="bg_fff relation">
+    <image class="relation_int"></image>
+    <button class="button_rel" hover-class="other-button-hover" open-type='contact'>
+      <image src="{{relationImg.oline}}"></image> 
+      在线咨询
+    </button>
+    <button class="button_rel" hover-class="other-button-hover" bindtap='handleClickProfile'>
+      <image src="{{relationImg.aboutUs}}"></image> 
+      关于我们
+    </button>
+  </view>
+  <!-- 提交需求 -->
+  <button class="btn" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo" style="background: #5458ec;opacity: {{opacity}};width:710rpx">
+     <image src="{{btnImg}}"></image> 
+    提交需求
+  </button> 
+</view>
+
+<template is="boot" data="{{bootStyle: bootStyle, headImg: headImg, canIUse: canIUse, bootWarnStyle: bootWarnStyle, warnImg: warnImg}}"/>

@@ -1,0 +1,79 @@
+<view class="swiper-tab">  
+    <view id="{{item.st}}" class="swiper-tab-list {{index == key?'on':''}}" wx:for="{{scrollItem}}" wx:key="{{item}}" data-current="{{item.id}}" bindtap="swichNav">{{item.text}}</view>  
+    <view class="move" animation="{{animation}}"></view>
+</view>  
+  
+<swiper current="{{currentTab}}" class="swiper-box" duration="300"  style='height: 100%' bindchange="bindChange">
+   <!-- 外贸资讯 -->
+    <swiper-item data-current="0">
+      <scroll-view scroll-y="{{true}}" style="height: 100%">
+        <navigator class="new_item" style="{{item.logourl?'':'height:auto;padding: 40rpx 30rpx 40rpx'}}" wx:for="{{newItemOne}}" wx:key="{{item}}" data-url="{{item.url}}" bindtap='handleClickItem'>
+          <view data-url="{{item.url}}">
+            <view class="item_title" data-url="{{item.url}}">{{item.title}}</view>
+            <view class="item_data" data-url="{{item.url}}">{{item.showtime}}</view>
+          </view>
+          <view class="img_all"  hidden='{{item.logourl?0:1}}'>
+            <image data-url="{{item.url}}" binderror="errorFunction" src="{{item.logourl}}"></image>
+          </view>
+        </navigator>
+        <view class="bg" hidden='{{bgShowOne}}'>
+          <image src="{{bgImg}}"></image>
+          报告老板，暂无数据
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 风险预警 -->
+    <swiper-item data-current="1">
+      <scroll-view scroll-y="{{true}}" style="height: 100%">
+        <navigator class="new_item" wx:for="{{newItemTwo}}" wx:key="{{item}}" data-url="{{item.url}}" bindtap="handleClickItem">
+          <view data-url="{{item.url}}">
+            <view class="item_title" data-url="{{item.url}}">{{item.title}}</view>
+            <view class="item_data" data-url="{{item.url}}">{{item.showtime}}</view>
+          </view>
+          <view class="img_all" hidden='{{item.logourl?0:1}}'>
+            <image data-url="{{item.url}}" src="{{item.logourl}}"></image>
+          </view>
+        </navigator>
+        <view class="bg" hidden='{{bgShowTwo}}'>
+          <image src="{{bgImg}}"></image>
+          报告老板，暂无数据
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 行业热点 --> 
+    <swiper-item data-current="2">
+      <scroll-view scroll-y="{{true}}" style="height: 100%">
+        <navigator class="new_item" wx:for="{{newItemThree}}" wx:key="{{item}}" data-url="{{item.url}}" bindtap="handleClickItem">
+          <view data-url="{{item.url}}">
+            <view class="item_title" data-url="{{item.url}}">{{item.title}}</view>
+            <view class="item_data" data-url="{{item.url}}">{{item.showtime}}</view>
+          </view>
+          <view class="img_all" hidden='{{item.logourl?0:1}}' data-url="{{item.url}}">
+            <image src="{{item.logourl}}" data-url="{{item.url}}"></image>
+          </view>
+        </navigator>
+        <view class="bg" hidden='{{bgShowThree}}'>
+          <image src="{{bgImg}}"></image>
+          报告老板，暂无数据
+        </view>
+      </scroll-view>
+    </swiper-item>
+    <!-- 干货工具 -->
+    <swiper-item data-current="3">
+      <scroll-view scroll-y="{{true}}" style="height: 100%">
+        <navigator class="new_item" wx:for="{{newItemFour}}" wx:key="{{item}}" data-url="{{item.url}}" bindtap="handleClickItem">
+          <view data-url="{{item.url}}">
+            <view class="item_title" data-url="{{item.url}}">{{item.title}}</view>
+            <view class="item_data" data-url="{{item.url}}">{{item.showtime}}</view>
+          </view>
+          <view class="img_all" hidden='{{item.logourl?0:1}}' data-url="{{item.url}}">
+            <image src="{{item.logourl}}"></image>
+          </view>
+        </navigator>
+        <view class="bg" hidden='{{bgShowFour}}'>
+          <image src="{{bgImg}}"></image>
+          报告老板，暂无数据
+        </view>
+      </scroll-view>
+    </swiper-item>
+</swiper>

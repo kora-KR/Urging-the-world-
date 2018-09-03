@@ -1,0 +1,35 @@
+<image class="header_img" src='{{headerImg}}'></image>
+
+<!-- main -->
+<view class="main">
+  <view class="title">催全球商账业务介绍</view>
+  <view class="txt">催全球商账业务由信用视界团队运作，公司成立于2006年，分支机构包括北京、上海、杭州以及山东、河北、江苏、湖南、陕西、安徽等省市地区。
+商账业务目前已累计对接622个国内和国际催收团队，包含各类律所、 信用和催收公司；加入24个国际信用管理及商账联盟，服务网络遍布全球216个国家和地区，已为上万家客户提供过信用报告和商账催收服务。</view>
+  <view class="txt">“专业催收，虽远必追”是我们一直以来秉承的目标，我们愿意用专业的服务为您的生意保驾护航！</view>
+  <view class="zz">
+    <view class="zz_title">我们的资质</view>
+    <view wx:for="{{creditIImg}}" wx:key="{{item}}">
+      <image src="{{item.src}}"></image>
+      <view class="zz_txt">{{item.txt}}</view>
+    </view>
+  </view>
+  <view class="relation" bindtap='handleClickRel'>
+    <image class="relation_icon" src="{{relationIcon}}"></image>
+    <text>联系我们</text>
+  </view>
+</view>
+
+<!-- zzc -->
+<view class="zzc" hidden='{{zzcStyle}}' bindtap='handleClickZzc'>
+  <view class="zzcTip">
+    <view class="allTip">请联系我们</view>
+    <view class="other" bindtap="handleClickTel">
+      <image src='{{telImg}}' bindtap="handleClickTel"></image>
+      <text bindtap="handleClickTel">17685818206</text>
+    </view>
+    <view class="other" bindtap='handkeClickEmail'>
+      <image bindtap='handkeClickEmail' src='{{emailImg}}'></image>
+      <text bindtap='handkeClickEmail'>candice@gladtrust.com</text>
+    </view>
+  </view>
+</view>

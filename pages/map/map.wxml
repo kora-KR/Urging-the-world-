@@ -1,0 +1,10 @@
+<view class="map_container">
+  <view class="map-tab-bar">
+    <view class="map-tab-li {{item.id == status ? 'active' : ''}}" bindtap="getType" data-type="{{item.id}}" wx:key="aroundListId" wx:for="{{aroundList}}">{{item.name}}</view>
+  </view>
+  <map class="map" longitude="{{longitude}}" latitude="{{latitude}}" include-points="{{points}}" markers='{{markers}}'></map>
+  <view class="map-tab-bar map-foot {{isShow ? '' : 'map-hide'}}">
+    <view class="map-name">{{name}}</view>
+    <view class="map-address">{{address}}</view>
+  </view>
+</view>

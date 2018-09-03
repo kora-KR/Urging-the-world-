@@ -1,0 +1,186 @@
+page{
+  width: 100%;
+  height: 100%;
+  background: #f3f3f8;
+}
+view, text{
+  line-height: 1
+}
+
+.phcolor{
+  color: #999;
+}
+
+.tip{
+  line-height: 86rpx;
+  font-size: 28rpx;
+  color: #666;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  background: #f3f3f8
+}
+.myNews{
+  padding: 0 0 0 30rpx;
+  box-sizing: border-box;
+  background: #fff
+}
+.myNews>view{
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  line-height: 90rpx;
+  height: 90rpx
+}
+.news{
+  font-size: 32rpx;
+}
+.news>view  {
+  border-bottom: 1rpx solid #e5e5e5
+}
+.news>view>text{
+  width: 180rpx;
+  color: #222;
+}
+.news>view>input{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 480rpx;
+  color: #999
+}
+.newsAdd>view>input{
+  color: #222
+}
+.myNews .dollerTip{
+  margin-right: 30rpx;
+  box-sizing: border-box;
+  width: 70rpx;
+}
+.btnTip{
+  padding: 34rpx 30rpx 52rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  text-align: left;
+  color: #666
+}
+.submit{
+  width: 690rpx;
+  height: 88rpx;
+  line-height: 88rpx
+}
+.int{
+  height: 40rpx;
+  width: 100%
+}
+.submitOk{
+  margin-bottom: 0;
+  font-size: 34rpx
+}
+.myNews>view{
+  position: relative;
+}
+.myNews image{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30rpx;
+  display: block;
+  width: 16rpx;
+  height: 26rpx;
+}
+
+.state>view>image{
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46rpx;
+  height: 46rpx;
+}
+.icon{
+  display: inline-block;
+  margin-right: 22rpx;
+  height: 45rpx;
+  box-sizing: border-box;
+}
+
+.submitRight{
+  padding: 100rpx 0 60rpx;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  color: #666
+}
+.submitRight>image{
+  display: block;
+  margin: 0 auto 60rpx;
+  width: 168rpx;
+  height: 168rpx;
+}
+.submitRight>view:nth-of-type(1){
+  margin-bottom: 30rpx;
+  font-weight: 600;
+  font-size: 40rpx;
+  color: #222
+}
+.submitRight>view:nth-of-type(2){
+  margin-bottom: 84rpx;
+  font-size: 28rpx;
+}
+.submitBtn{
+  color: #900
+}
+.submit_his{
+  margin-top: 30rpx;
+  color: #222;
+  font-size: 34rpx
+}
+.submit_his::after{
+  border: qrpx solid #d9d9e0;
+}
+
+.top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  line-height: 70rpx;
+  width: 100%;
+  font-size: 30rpx;
+  color: #fff;
+  text-align: center;
+  background: #f55e43;
+}
+
+.zzc{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5)
+}
+.zzc_item{
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  width: 100%
+}
+.button_out{
+  padding-top: 28rpx;
+  box-sizing: border-box;
+  height: 144rpx;
+  background: #f3f3f8
+}
+.myNews view .right_icon{
+  display: block;
+  width: 26rpx;
+  height: 26rpx
+}

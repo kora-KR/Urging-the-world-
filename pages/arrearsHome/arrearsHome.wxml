@@ -1,0 +1,108 @@
+<view style="{{formStyle}}">
+  <view class="myTip tip">欠款方信息</view>
+  <view class="myNews news newsAdd">
+    <view style='border: 0'>
+      <text>欠款方</text>
+      <input placeholder-class="phcolor" placeholder='请输入欠款方企业名称' value='{{qkV}}' bindinput='inputQk'></input>
+    </view>
+    <view style="{{cStateStyle}}; border-top: 1rpx solid #e5e5e5;border-bottom: 0">
+      <text>国家/地区</text>
+      <input placeholder-class="phcolor" placeholder='请输入欠款方所在的国家/地区' value="{{stateV}}" bindinput='inputState'></input>
+    </view>
+  </view>
+  <view class="myTip tip">我方信息</view>
+  <view class="myNews news newsAdd">
+    <view>
+      <text>我方名称</text>
+      <input placeholder-class="phcolor" placeholder='请输入债权方企业名称或人名' value="{{myNameV}}" bindinput='inputName'></input>
+    </view>
+    <view>
+      <text>联系人</text>
+      <input placeholder-class="phcolor" placeholder='您的称呼' value='{{lationV}}' bindinput='inputLation'></input>
+    </view>
+    <view style='border:0'>
+      <text>联系方式</text>
+      <input type="number" style='color: {{telTip}}' placeholder-class="phcolor" placeholder='您的联系方式' value="{{telV}}" bindinput='inputTel'></input>
+    </view>
+  </view>
+
+  <view class="myNews news newsAdd" style='margin: 60rpx 0;'>
+    <view style='border: 0'>
+      <text>欠款金额</text>
+      <input type="digit" placeholder-class="phcolor" style='flex: 1;color: {{coinTip}}' placeholder='请输入欠款金额（万元）' value="{{coinV}}" bindinput='inputCoin' maxlength='5'></input>
+      <view class="dollerTip">万元</view>
+    </view>
+  </view>
+
+  <view class="myNews news" bindtap='handleClickChoice'>
+    <view data-tip="time">
+      <text data-tip="time">拖欠时间</text>
+      <input data-tip="time" style="color: {{textTip}}" value="{{textKey}}" disabled data-val='{{textVal}}'></input>
+      <image data-tip="time" class="choiceTiem" src="{{static_img_url.icon_arrow1}}"></image>
+    </view>
+    <view data-tip="state">
+      <text data-tip="state">案件状态</text>
+      <input data-tip="state" style="color: {{stateTip}}"  value="{{stateKey}}" data-val="{{stateVal}}" disabled></input>  
+      <image data-tip="state" class="choiceStateId" src="{{static_img_url.icon_arrow1}}"></image>
+    </view>
+    <view data-tip="qk" style='border: 0'>
+      <text data-tip="qk">欠款方状态</text>
+      <input data-tip="qk" style="color: {{qkTip}}" value="{{qkState}}" disabled data-val="{{qkStateVal}}"></input>
+      <image data-tip="qk"  class="choiceState" src="{{static_img_url.icon_arrow1}}"></image>
+    </view>
+  </view>
+  <view class="btnTip">
+    需求提交后，催全球专业顾问会与您联系，跟进您的需求
+  </view>
+
+  <view class="top">{{topTip}}</view>
+  <button class="submit" loading="{{loadingTip}}" bindtap='handleClickSubmit' type="primary" style="background: #5458ec;color: {{color}}" hover="true" hover-class="submitBtn" hover-start-time="100" hover-stay-time="1000">提交需求     </button>
+  <view class='int'></view>
+</view>
+
+<!-- zzc -->
+<view class="zzc" hidden='{{zzcShow}}' catchtap='handleClickZzc'>
+  <!-- 拖欠时间 -->
+  <view class="zzc_item" style='{{myNewsStyle}}'>
+    <view class="myTip tip">拖欠时间</view>
+    <view class="myNews news" catchtap='handleClickCatch'>
+      <view wx:for="{{myTime}}" wx:key="{{item}}">
+        <text style='width: 100%' catchtap='handleClickMyNews' data-text="{{item.key}}" data-val="{{item.val}}">{{item.key}}</text>
+        <image style="{{index+1 == textVal?'display: block':'display: none'}}" class="right_icon" src='{{rightIcon}}'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 案件状态 -->
+  <view class="zzc_item" style='{{caseStateStyle}}'>
+    <view class="myTip tip">案件状态</view>
+    <view class="myNews news" catchtap='handleClickCatch'>
+      <view wx:for="{{caseState}}" wx:key="{{item}}">
+        <text style='width: 100%' catchtap='handleClickState' data-text="{{item.key}}" data-val='{{item.val}}'>{{item.key}}</text>
+        <image style="{{index+1 == stateVal?'display: block':'display: none'}}" class="right_icon" src='{{rightIcon}}'></image>
+      </view>
+    </view>
+  </view>
+  <!-- 欠款状态 -->
+  <view class="zzc_item" style='{{stateStyle}}'>
+    <view class="myTip tip">欠款方状态（多选）</view>
+    <view class="myNews news state" catchtap='handleClickCatch'>
+      <view wx:for="{{stateAll}}" wx:key="{{index}}">
+        <icon class="icon" style='opacity: {{item.opacity}}' type="success" color="#517cf8"></icon>
+        <image style='opacity: {{item.iconRatingShow}}' bindtap='handleClickQkItem' data-index="{{index}}" data-val="{{item.val}}" class="iconRing" src="{{static_img_url.icon_multiplechoice_2}}"></image>
+        <view style='width: 100%' catchtap='handleClickQkItem' data-index="{{index}}" data-val="{{item.val}}">{{item.text}}</view>
+      </view>
+    </view>
+    <view class="button_out">
+      <button class="submit" type="primary" bindtap='handleClickQk' style="background: #5458ec;">确定</button>
+    </view>
+  </view>
+</view>
+
+<view class="submitRight" style='{{rightStyle}}'>
+  <image src="{{static_img_url.icon_victory}}"></image>
+  <view>催欠款需求提交成功</view>
+  <view>催全球工作人员会尽快与您联系</view>
+  <button class="submit submitOk" type="primary" bindtap="handleClickToIndex" style="background: #5458ec">返回</button>
+  <button class="submit submitOk submit_his" type="primary" bindtap="handleClickToMy" style="background: #fafafc;color: #222">查看我的需求</button>
+  
+</view>

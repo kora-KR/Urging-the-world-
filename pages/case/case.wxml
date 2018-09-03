@@ -1,0 +1,15 @@
+<image class="header_img" src="{{headerImg}}"></image>
+ 
+<!-- main -->
+<view class="main">
+  <navigator url="{{item.url}}" class="case_item" wx:for="{{caseItem}}" wx:key="{{item}}">
+    <image class="case_icon" src="{{caseIcon}}"></image>
+    <view>
+      <image src='{{item.img}}'></image> 
+    </view>
+    <view class="case_text">
+      <view>{{item.h1}}</view>
+      <view>{{item.h2}}</view>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/arrearsHome/arrearsHome",
+    "pages/arrearsWeb/arrearsWeb",
+    "pages/arrearsSubmit/arrearsSubmit",
+    "pages/arrearsSubmitDetail/arrearsSubmitDetail",
+    "pages/case/case",
+    "pages/process/process",
+    "pages/aboutUs/aboutUs",
+    "pages/headline/headline",
+    "pages/headlineItem/headlineItem",
+    "pages/caseItem/caseItem",
+    "pages/map/map"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#3e2865",
+    "navigationBarTextStyle": "dark",
+    "backgroundColor": "#666",
+    "backgroundColorTop": "#3e2865",
+    "enablePullDownRefresh": false,
+    "onReachBottomDistance": 0
+  },
+  "tabBar": {
+    "color": "#222",
+    "selectedColor": "#4b69fc",
+    "borderStyle": "black",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/images/icon_tab_1b.png",
+        "selectedIconPath": "/images/icon_tab_1a.png",
+        "text": "提交需求"
+      },
+      {
+        "pagePath": "pages/case/case",
+        "iconPath": "/images/icon_tab_2b.png",
+        "selectedIconPath": "/images/icon_tab_2a.png",
+        "text": "案例"
+      },
+      {
+        "pagePath": "pages/process/process",
+        "iconPath": "/images/icon_tab_3b.png",
+        "selectedIconPath": "/images/icon_tab_3a.png",
+        "text": "服务流程"
+      },
+      {
+        "pagePath": "pages/arrearsSubmit/arrearsSubmit",
+        "iconPath": "/images/icon_tab_4b.png",
+        "selectedIconPath": "/images/icon_tab_4a.png",
+        "text": "我的"
+      }
+    ]
+  }
+}

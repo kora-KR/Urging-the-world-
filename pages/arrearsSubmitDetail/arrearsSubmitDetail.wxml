@@ -1,0 +1,40 @@
+<view class="main">
+  <view class="mainTop">
+    欠款方名称
+    <view class="name">{{qkName}}</view>
+    欠款方国家/地区
+    <view class="name">{{gj}}</view>
+  </view>
+    <view class="mainTop">
+    我方名称
+    <view class="name">{{myName}}</view>
+  </view>
+  <view class="state">
+    <view>
+      <text class="qk lh">欠款金额</text>
+      <text class="lh">{{coin}}万</text>
+    </view>
+    <view>
+      <text class="qk lh">拖欠时间</text>
+      <text class="lh">{{tqTime}}</text>
+    </view>
+    <view>
+      <text class="qk lh">案件状态</text>
+      <text class="lh">{{state}}</text>
+    </view>
+    <view>
+      <text class="qk lh">欠款方状态</text>
+      <text class="lh">{{qkState}}</text>
+    </view>
+    <view>
+      <text class="qk lh">提交日期</text>
+      <text class="lh">{{subDate}}</text>
+    </view>
+  </view>
+  <view class="proState">项目状态: <text class="proStateOve" style='color: {{c}}'>{{proState}}</text><text class="relationTip">（客服会尽快与您联系）</text></view>
+</view>
+
+
+<button class="button_rel relation" hover-class="other-button-hover" open-type='contact'>
+  在线咨询
+</button>

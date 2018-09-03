@@ -1,0 +1,178 @@
+page{
+  background: #f4f4f4
+}
+.header{
+  position: relative;
+}
+.header>navigator{
+  position: absolute;
+  left: 24rpx;
+  bottom: 20rpx;
+  z-index: 88;
+  width: 348rpx;
+  height: 190rpx;
+  border-radius: 10rpx;
+}
+.header>navigator:nth-of-type(2){
+  left: 379rpx;
+}
+.ehaderImg{
+  display: block;
+  width: 100%;
+  height: 424rpx;
+}
+.center{
+  padding: 12rpx 0;
+  box-sizing: border-box;
+  background: #fff; 
+}
+.centerTip{
+  margin: 0 auto;
+  width: 480rpx;
+  line-height: 72rpx;
+  background: #4377e2;
+  text-align: center;
+  color: #fff;
+  font-size: 28rpx;
+  border-radius: 40rpx;
+}
+
+/* auz */
+.auz{
+  position: relative;
+  padding: 20rpx 30rpx 0;
+  box-sizing: border-box;
+  font-size: 24rpx;
+  color: #999;
+  background: #fff;
+}
+.auz_tip{
+  padding-left: 10rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+.int{
+  display: block;
+  position: absolute;
+  top: 28rpx;
+  left: 20rpx;
+  width: 6rpx;
+  height: 24rpx;
+  background: #517cf8
+}
+.int2{
+  top: 38rpx
+}
+.auz>view:nth-of-type(1){
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+  color: #222;
+}
+.auzItem{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 32rpx;
+  box-sizing: border-box
+}
+.coin{
+  margin-bottom: 16rpx;
+  font-size: 36rpx;
+  color: #f55f43;
+  font-weight: bold;
+}
+.name{
+  width: 360rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 26rpx;
+  font-size: 28rpx;
+  color: #222;
+  font-weight: bold
+}
+.auzItem>view:nth-of-type(1){
+  padding-left: 10rpx;
+  box-sizing: border-box;
+  width: 260rpx;
+}
+.swiper{
+  height: 250rpx;
+}
+
+/* rec */
+.rec{
+  position: relative;
+  margin: 20rpx 0;
+  padding: 22rpx 30rpx 22rpx 140rpx;
+  height: 114rpx;
+  box-sizing: border-box;
+  background: #fff;
+}
+.rec>image{
+  position: absolute;
+  left: 30rpx;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 74rpx;
+  height: 66rpx;
+}
+.swiperRec{
+  margin-top: -2rpx;
+  font-size: 24rpx;
+  color: #222;
+  height: 80rpx;
+}  
+.recItem{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.recCoin{
+  display: inline-block;
+  width: 80rpx;
+  color: #f55f43;
+  font-weight: 600;
+  text-align: right;
+} 
+.recName{
+  display: inline-block;
+  margin: 0 60rpx 0 35rpx;
+  width: 256rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+/* more */
+.more{
+  padding: 32rpx 30rpx 24rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #222;
+  background: #fff;
+}
+.moreTip{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin-top: 24rpx;
+  text-align: center;
+  font-size: 26rpx;
+}
+.moreTip image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.moreTip>navigator{
+  width: 25%;
+  padding: 26rpx 0 0;
+  box-sizing: border-box
+}
+.moreTip>navigator>view{
+  margin: 24rpx 0
+}
+.navigator-hover{
+  background: #eeeef3
+}

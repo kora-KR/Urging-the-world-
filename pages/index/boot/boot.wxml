@@ -1,0 +1,15 @@
+<template name="boot">
+  <!-- 引导页 -->
+  <view class="boot" hidden="{{bootStyle}}">
+    <image class="headerImg" src="{{headImg}}"></image>
+    <button class="btn" wx:if="{{canIUse}}" open-type="getUserInfo" type="primary" style="background: #5458ec" bindgetuserinfo="bindGetUserInfo">开启催全球</button>
+  </view>
+
+  <!-- 引导页取消提醒 -->
+  <view class="bootWarn" hidden='{{bootWarnStyle}}'>
+    <image src="{{warnImg}}"></image>
+    <view>登录信用视界需允许授权</view>
+    <view>请重新进入小程序并允许授权</view>
+    <button class="openAgain btn" wx:if="{{canIUse}}" open-type="getUserInfo" type="primary" style="background: #5458ec" bindgetuserinfo="bindGetUserInfo">重新授权</button>
+  </view>
+</template>
