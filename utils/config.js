@@ -1,10 +1,10 @@
 module.exports = {
-  baseApi_prod: "https://service.x315.com/open/api/gateway.do",//生产环境
-  baseApi_dev: "https://service.so315.cn/open/api/gateway.do",//开发环境
-  baseApi_test: "https://service.so315.cn/open/api/gateway.do",//测试环境,
-  baseApi_debug: "http://localhost:8080/open/api/gateway.do",//调试环境
-  app_id: "708eb6be5cc145f8a75bc32576b4dca80",//我们程序的appid
-  wechat_app_id: "wx944593e88543a16b",//微信的appid
+  baseApi_prod: "",//生产环境
+  baseApi_dev: "",//开发环境
+  baseApi_test: "",//测试环境,
+  baseApi_debug: "",//调试环境
+  app_id: "",//我们程序的appid
+  wechat_app_id: "",//微信的appid
   no_login: ['x315.miniprogram.login'],
   static_url: { //静态文件地址
     static_base_v1: img_url(), //微信小程序地址版本为v1
